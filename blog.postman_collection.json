@@ -1,0 +1,1013 @@
+{
+	"info": {
+		"_postman_id": "ab91cb54-b757-4020-a903-46493568d233",
+		"name": "blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17936232",
+		"_collection_link": "https://planetary-crater-891268.postman.co/workspace/My-Workspace~cd8819c3-c55b-4f11-878a-8e84fde146d6/collection/17936232-ab91cb54-b757-4020-a903-46493568d233?action=share&source=collection_link&creator=17936232"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"salman\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"password\":\"01111022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/register",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"salman\",\r\n    \"email\":\"test1@gmail.com\",\r\n    \"password\":\"01111022\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/register",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:45:59 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:45:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"user\": {\n            \"name\": \"salman\",\n            \"email\": \"test1@gmail.com\",\n            \"updated_at\": \"2024-09-11T20:45:59.000000Z\",\n            \"created_at\": \"2024-09-11T20:45:59.000000Z\",\n            \"id\": 4\n        },\n        \"token\": \"4|g3m3uBo60qFFihgRBt5ssSmudqeTidUfrt4WxNeAda09c9d3\"\n    },\n    \"error\": null,\n    \"message\": \"User registered successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"dastanrab@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"dastanrab@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/login",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 19:34:32 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 19:34:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"dastan\",\n            \"email\": \"dastanrab@gmail.com\",\n            \"role\": \"Admin\",\n            \"email_verified_at\": \"2024-09-11T13:42:41.000000Z\",\n            \"created_at\": \"2024-09-11T13:42:41.000000Z\",\n            \"updated_at\": \"2024-09-11T13:42:41.000000Z\"\n        },\n        \"token\": \"3|bKsyUv58gXrkdAWcrwuqxxhyH3LR7vzAOcLETJYJb0ba8a21\"\n    },\n    \"error\": null,\n    \"message\": \"User logged in successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|hQYYmAK0oHme4XbYf9Z71nhbNcfuYpv6EQqXN72tafaff2b3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/logout",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|bKsyUv58gXrkdAWcrwuqxxhyH3LR7vzAOcLETJYJb0ba8a21",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/post",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/post",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 19:41:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 19:41:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 6,\n                \"user_id\": 1,\n                \"title\": \"dds\",\n                \"body\": \"sadadad\",\n                \"publish_status\": \"Published\",\n                \"published_at\": \"2024-09-11 18:16:00\",\n                \"created_at\": \"2024-09-11T18:15:52.000000Z\",\n                \"updated_at\": \"2024-09-11T18:16:00.000000Z\",\n                \"user\": {\n                    \"id\": 1,\n                    \"name\": \"dastan\",\n                    \"email\": \"dastanrab@gmail.com\",\n                    \"role\": \"Admin\",\n                    \"email_verified_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"created_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"updated_at\": \"2024-09-11T13:42:41.000000Z\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"user_id\": 1,\n                \"title\": \"yyyyyyyy\",\n                \"body\": \"sxsxsx\",\n                \"publish_status\": \"Published\",\n                \"published_at\": \"2024-09-11 18:14:38\",\n                \"created_at\": \"2024-09-11T18:14:28.000000Z\",\n                \"updated_at\": \"2024-09-11T18:14:38.000000Z\",\n                \"user\": {\n                    \"id\": 1,\n                    \"name\": \"dastan\",\n                    \"email\": \"dastanrab@gmail.com\",\n                    \"role\": \"Admin\",\n                    \"email_verified_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"created_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"updated_at\": \"2024-09-11T13:42:41.000000Z\"\n                }\n            },\n            {\n                \"id\": 4,\n                \"user_id\": 2,\n                \"title\": \"test publish\",\n                \"body\": \"gsgsgsgsgsgsgsgsg\",\n                \"publish_status\": \"Published\",\n                \"published_at\": \"2024-09-11 18:09:08\",\n                \"created_at\": \"2024-09-11T18:09:08.000000Z\",\n                \"updated_at\": \"2024-09-11T18:09:16.000000Z\",\n                \"user\": {\n                    \"id\": 2,\n                    \"name\": \"tabam\",\n                    \"email\": \"taban@gmail.com\",\n                    \"role\": \"Author\",\n                    \"email_verified_at\": null,\n                    \"created_at\": \"2024-09-11T13:46:01.000000Z\",\n                    \"updated_at\": \"2024-09-11T13:46:01.000000Z\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"user_id\": 2,\n                \"title\": \"taban post\",\n                \"body\": \"its just test\",\n                \"publish_status\": \"Published\",\n                \"published_at\": \"2024-09-11 17:45:04\",\n                \"created_at\": \"2024-09-11T17:45:04.000000Z\",\n                \"updated_at\": \"2024-09-11T17:48:04.000000Z\",\n                \"user\": {\n                    \"id\": 2,\n                    \"name\": \"tabam\",\n                    \"email\": \"taban@gmail.com\",\n                    \"role\": \"Author\",\n                    \"email_verified_at\": null,\n                    \"created_at\": \"2024-09-11T13:46:01.000000Z\",\n                    \"updated_at\": \"2024-09-11T13:46:01.000000Z\"\n                }\n            },\n            {\n                \"id\": 1,\n                \"user_id\": 1,\n                \"title\": \"Corrupti sapiente quidem et quos.\",\n                \"body\": \"Eos commodi et at ut. Maiores qui voluptas nobis consequuntur qui. Aliquam excepturi et praesentium commodi aut veritatis. Ratione qui et provident id aliquam.\\r\\n\\r\\nAtque qui repudiandae consequatur. Non architecto tempora eligendi et. Quisquam ut fugit voluptas vitae sapiente. Sed ut magnam vero alias.\\r\\n\\r\\nTemporibus quis modi et iure quis ipsa. Aliquid et sed ullam aperiam beatae. Vel sed non magni ratione.\",\n                \"publish_status\": \"Published\",\n                \"published_at\": \"2024-05-24 06:39:44\",\n                \"created_at\": \"2024-09-11T13:42:41.000000Z\",\n                \"updated_at\": \"2024-09-11T18:09:45.000000Z\",\n                \"user\": {\n                    \"id\": 1,\n                    \"name\": \"dastan\",\n                    \"email\": \"dastanrab@gmail.com\",\n                    \"role\": \"Admin\",\n                    \"email_verified_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"created_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"updated_at\": \"2024-09-11T13:42:41.000000Z\"\n                }\n            },\n            {\n                \"id\": 2,\n                \"user_id\": 1,\n                \"title\": \"Qui consequatur cum quisquam et.\",\n                \"body\": \"Eaque atque aut et. Tenetur consectetur voluptatem ut consequuntur et et. Voluptates quia dicta sunt cum sit pariatur molestias.\\r\\n\\r\\nIn atque omnis eos iusto omnis sit. Ea deserunt labore voluptatem repudiandae. Commodi error quaerat illo ut odit.\\r\\n\\r\\nLaudantium sit asperiores aut. Dignissimos aut aut consequuntur rerum laudantium. Officiis labore doloribus ipsam numquam minima. Quasi incidunt quod nisi natus.\",\n                \"publish_status\": \"Published\",\n                \"published_at\": \"2024-01-15 17:26:05\",\n                \"created_at\": \"2024-09-11T13:42:41.000000Z\",\n                \"updated_at\": \"2024-09-11T17:16:26.000000Z\",\n                \"user\": {\n                    \"id\": 1,\n                    \"name\": \"dastan\",\n                    \"email\": \"dastanrab@gmail.com\",\n                    \"role\": \"Admin\",\n                    \"email_verified_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"created_at\": \"2024-09-11T13:42:41.000000Z\",\n                    \"updated_at\": \"2024-09-11T13:42:41.000000Z\"\n                }\n            }\n        ],\n        \"first_page_url\": \"http://127.0.0.1:8000/api/post?page=1\",\n        \"from\": 1,\n        \"last_page\": 1,\n        \"last_page_url\": \"http://127.0.0.1:8000/api/post?page=1\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/post?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": null,\n        \"path\": \"http://127.0.0.1:8000/api/post\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 6,\n        \"total\": 6\n    },\n    \"error\": null,\n    \"message\": \"post list\"\n}"
+						}
+					]
+				},
+				{
+					"name": "store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|bKsyUv58gXrkdAWcrwuqxxhyH3LR7vzAOcLETJYJb0ba8a21",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "asdas",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "dsadasd",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Pc/Downloads/1685814488765.jpg"
+								},
+								{
+									"key": "categories[]",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/post",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201 sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "asdas",
+											"type": "text"
+										},
+										{
+											"key": "body",
+											"value": "dsadasd",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Pc/Downloads/1685814488765.jpg"
+										},
+										{
+											"key": "categories[]",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/post",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"post"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:06:26 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:06:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"title\": \"asdas\",\n        \"body\": \"dsadasd\",\n        \"user_id\": 1,\n        \"updated_at\": \"2024-09-11T20:06:26.000000Z\",\n        \"created_at\": \"2024-09-11T20:06:26.000000Z\",\n        \"id\": 13\n    },\n    \"error\": null,\n    \"message\": \"post create\"\n}"
+						},
+						{
+							"name": "422 sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "asdas",
+											"type": "text"
+										},
+										{
+											"key": "body",
+											"value": "dsadasd",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Pc/Downloads/1685814488765.jpg"
+										},
+										{
+											"key": "categories[]",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/post",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"post"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:24:45 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:24:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"message\": \"validation error \",\n    \"status\": \"fail\",\n    \"errors\": {\n        \"body\": [\n            \"The body field is required.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|bKsyUv58gXrkdAWcrwuqxxhyH3LR7vzAOcLETJYJb0ba8a21",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Published",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "asasa",
+									"type": "text"
+								},
+								{
+									"key": "categories[]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "publish_status",
+									"value": "Published",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/post/5?_method=put",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"5"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "put"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Published",
+											"type": "text"
+										},
+										{
+											"key": "body",
+											"value": "asasa",
+											"type": "text"
+										},
+										{
+											"key": "categories[]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "publish_status",
+											"value": "Published",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/post/5?_method=put",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"post",
+										"5"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:36:44 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:36:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": 5,\n        \"user_id\": 1,\n        \"title\": \"Published\",\n        \"body\": \"asasa\",\n        \"publish_status\": \"Published\",\n        \"published_at\": \"2024-09-11T20:36:44.176092Z\",\n        \"created_at\": \"2024-09-11T18:14:28.000000Z\",\n        \"updated_at\": \"2024-09-11T20:36:44.000000Z\"\n    },\n    \"error\": null,\n    \"message\": \"post update\"\n}"
+						},
+						{
+							"name": "403 sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Published",
+											"type": "text"
+										},
+										{
+											"key": "body",
+											"value": "asasa",
+											"type": "text"
+										},
+										{
+											"key": "categories[]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "publish_status",
+											"value": "Published",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/post/1?_method=put",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"post",
+										"1"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:55:49 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:55:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": null,\n    \"error\": null,\n    \"message\": \"only admin or author can update\"\n}"
+						}
+					]
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|bKsyUv58gXrkdAWcrwuqxxhyH3LR7vzAOcLETJYJb0ba8a21",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/post/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "401 sample",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/post/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"post",
+										"5"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:56:24 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:56:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": null,\n    \"message\": \"You are not Authorize!!\"\n}"
+						},
+						{
+							"name": "403 sample",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/post/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"post",
+										"5"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:56:51 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Sep 2024 20:56:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": null,\n    \"error\": null,\n    \"message\": \"only admin  can delete\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
