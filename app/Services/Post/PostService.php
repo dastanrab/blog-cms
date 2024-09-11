@@ -76,11 +76,11 @@ class PostService{
             return $post;
 
     }catch (\Exception $exception){
-    throw new \Exception('error in create');
+    throw new \Exception('error in update');
     }
 
     }
-    public function deletePost(Post $post)
+    public function deletePost(Post $post): void
     {
         $this->checkImage($post);
         $post->categories()->detach();
