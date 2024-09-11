@@ -56,8 +56,17 @@ class PostController extends Controller
      */
     public function store(PostCreateRequest $request)
     {
-        $this->post_service->createPost($request);
-        return view('posts.create')->with('success','post created!')->with('categories', Category::all());
+        $status='success';
+        $message='post created!';
+        try {
+            $this->post_service->createPost($request);
+
+        }catch (\Exception $exception)
+        {
+            $status='fail';
+            $message=$exception->getMessage();
+        }
+        return view('posts.create')->with($status,$message)->with('categories', Category::all());
     }
 
     /**
@@ -88,11 +97,21 @@ class PostController extends Controller
 
     /**
      * Update the specified resource in storage.
+     * @throws \Exception
      */
     public function update(PostUpdateRequest $request, Post $post)
     {
-        $this->post_service->updatePost($request,$post);
-        return redirect()->back()->with('success','post updated!');
+        $status='success';
+        $message='post updated!';
+        try {
+            $this->post_service->updatePost($request,$post);
+
+        }catch (\Exception $exception)
+        {
+            $status='fail';
+            $message=$exception->getMessage();
+        }
+        return redirect()->back()->with($status,$message);
     }
 
     /**

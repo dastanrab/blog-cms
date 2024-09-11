@@ -8,6 +8,11 @@
                 <strong>Success!</strong> {{$success}}
             </div>
         @endif
+        @if(isset($fail))
+            <div class="alert alert-danger">
+                <strong>fail!</strong> {{$fail}}
+            </div>
+        @endif
         <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">

@@ -8,6 +8,11 @@
                 <strong>Success!</strong> {{session('success')}}
             </div>
         @endif
+        @if(session('fail'))
+            <div class="alert alert-danger">
+                <strong>Fail!</strong> {{session('fail')}}
+            </div>
+        @endif
         <form action="{{ route('posts.update', $post) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
