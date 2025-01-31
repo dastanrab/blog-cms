@@ -12,6 +12,7 @@ pipeline {
                     if (fileExists(PROJECT_DIR)) {
                         echo "Project exists. Pulling latest changes..."
                         sh "cd ${PROJECT_DIR} && git pull origin main"
+                         sh 'docker-compose up'
                     } else {
                         echo "Cloning repository..."
                         sh "git clone https://your-repo-url.git ${PROJECT_DIR}"
