@@ -14,6 +14,8 @@ pipeline {
                         sh "cd ${PROJECT_DIR} && git pull origin main"
                          sh 'docker-compose up'
                     } else {
+                        echo "who i am"
+                        sh "whoami"
                         echo "Cloning repository..."
                         sh "git clone https://your-repo-url.git ${PROJECT_DIR}"
                     }
