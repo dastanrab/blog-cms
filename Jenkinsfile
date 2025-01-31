@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_DIR = "/home/my_projects/blog"
+        PROJECT_DIR = "/home/jenkins/projects"
     }
 
     stages {
